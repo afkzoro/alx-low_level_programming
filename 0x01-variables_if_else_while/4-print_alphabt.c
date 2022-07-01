@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	var ch;
+	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
