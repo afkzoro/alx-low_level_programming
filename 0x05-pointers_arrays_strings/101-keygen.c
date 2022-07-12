@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 void randomPasswordGenerator(int N)
 {
@@ -22,13 +23,13 @@ void randomPasswordGenerator(int N)
 		if (randomer == 1)
 		{
 			password[i] = numbers[rand() % 10];
-			randomer = rand % 4;
+			randomer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else if (randomer == 2)
 		{
 			password[i] = symbols[rand() % 8];
-			randomer = rand % 4;
+			randomer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else if (randomer == 3)
