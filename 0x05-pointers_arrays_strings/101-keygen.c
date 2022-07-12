@@ -21,5 +21,6 @@ int main()
 		}
 	}
 
+	printf("\nTada! Congrats");
 	return (0);
 }
