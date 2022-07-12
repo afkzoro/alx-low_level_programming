@@ -8,13 +8,14 @@ void randomPasswordGenerator(int N)
 	int i = 0;
 
 	int randomer = 0;
+	char numbers[10];
 
 	srand((unsigned int)(time(NULL)));
-	char numbers[] = "0123456789";
+	numbers[10] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwyxz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
-	char password[N];
+	int password[N];
 
 	randomer = rand() % 4;
 
