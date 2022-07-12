@@ -1,56 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
-
-void randomPasswordGenerator(int N)
-{
-	int i = 0;
-
-	int randomer = 0;
-	char numbers[10];
-
-	srand((unsigned int)(time(NULL)));
-	numbers[10] = "0123456789";
-	char letter[] = "abcdefghijklmnopqrstuvwyxz";
-	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char symbols[] = "!@#$^&*?";
-	int password[N];
-
-	randomer = rand() % 4;
-
-	for (i = 0; i < N; i++)
-	{
-		if (randomer == 1)
-		{
-			password[i] = numbers[rand() % 10];
-			randomer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomer == 2)
-		{
-			password[i] = symbols[rand() % 8];
-			randomer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			randomer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else {
-			password[i] = letter[rand() % 26];
-			randomer = rand() % 4;
-			printf("%c", password[i]);
-		}
-	}
-}
 
 int main()
 {
-	int N = 10;
+	int i, password, len;
+	srand((unsigned int)time(NULL));
+	len = 10;
 
-	randomPasswordGenerator(N);
+	for (i = 0; i < len; i++)
+	{
+		int k = rand() % 128;
+		if ((k >= 48 && k <= 57) || (k >= 65 && k <= 90) || (k >= 97 && k <= 122) || (k >= 35 && k <= 37) || k == 64)
+		{
+			printf("%c", k);
+		}
+		else
+		{
+			i--;
+		}
+	}
+
 	return (0);
 }
