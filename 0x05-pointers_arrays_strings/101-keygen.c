@@ -6,7 +6,7 @@ int main()
 {
 	int i, len;
 	srand((unsigned int)time(NULL));
-	len = 10;
+	len = 15;
 
 	for (i = 0; i < len; i++)
 	{
