@@ -2,25 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-	int i, len;
-	srand((unsigned int)time(NULL));
-	len = 15;
+	int i = 0, acum = 2772;
 
-	for (i = 0; i < len; i++)
+	srand(time(NULL));
+	i = 32 + rand() % (126 - 32);
+
+	while (acum != 0)
 	{
-		int k = rand() % 128;
-		if ((k >= 48 && k <= 57) || (k >= 65 && k <= 90) || (k >= 97 && k <= 122) || (k >= 35 && k <= 37) || k == 64)
-		{
-			printf("%c", k);
-		}
-		else
-		{
-			i--;
-		}
-	}
+		printf("%c", i);
+		acum = acum - i;
+		i = 32 + rand() % (126 - 32);
 
-	printf("\nTada! Congrats");
+		if (acum < 126 && acum > 32)
+			i = acum;
+	}
 	return (0);
 }
