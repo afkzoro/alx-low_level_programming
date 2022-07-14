@@ -3,11 +3,11 @@
 
 /**
  * cap_string - ....
- * @s: ...
+ * @x: ...
  *
  * Return: character value
  */
-char *cap_string(char *s)
+char *cap_string(char *x)
 {
 	int a = 0, i;
 	int spa = 13;
