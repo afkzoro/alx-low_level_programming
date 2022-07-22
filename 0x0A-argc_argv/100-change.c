@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
-* main -> this is a function to print its name
+* main -Entry point
 * @argc: argc parameter
 * @argv: an array of a command listed
-* Return: 0 for success
+* Return: Always )
 */
 int main(int argc, char *argv[])
 {
