@@ -1,1 +1,1 @@
-Static Library task
+Static Library Task
