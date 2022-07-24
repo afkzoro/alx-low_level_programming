@@ -4,36 +4,36 @@
 #include <stddef.h>
 
 /**
- * strdup - Duplicates a string
+ * _strdup - Duplicates a string
 	* @str: The pointer to the string to duplicate
  *
 	*Return: Duplictaed string
  */
 char *_strdup(char *str)
 {
- char *b;
-	unsigned int i, j;
-	i = 0; j =1;
- 
-	if (str == NULL)
-	return(NULL);
+  char *b;
+	 unsigned int i, j;
+  i = 0; j = 1;
 
-	while (str[j] != '\0')
-	{
-		j++;
-	}
+	 if (str == NULL)
+	 return(NULL);
 
-	b = malloc(j * sizeof(char) + 1);
+	 while (str[j] != '\0')
+	 {
+		 j++;
+	 }
 
-	if (b == NULL)
-	return (NULL);
+	 b = malloc(j * sizeof(char) + 1);
 
-	while(i < j)
-	{
-		b[i] = str[i];
-		i++;
-	}
+	 if (b == NULL)
+	 return (NULL);
 
-	b[i] = '\0';
-	return (b);
+	 while(i < j)
+	 {
+		 b[i] = str[i];
+		 i++;
+	 }
+
+	 b[i] = '\0';
+	 return (b);
 }
