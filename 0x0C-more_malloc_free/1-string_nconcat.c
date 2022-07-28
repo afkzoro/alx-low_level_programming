@@ -1,55 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
-	* string_nconcat - Concatenates two strings
-	* @s1: First string
-	* @s2: Second String
-	* @n: Size of memory
-	* Return: Returns pointer to new string
-	*/
+  * string_nconcat - ...
+  * @s1: ...
+  * @s2: ...
+  * @n: ...
+  *
+  * Return: ...
+  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s;
-	unsigned int a  = 0, b = 0, slen1 = 0, slen2 = 0;
+	unsigned int i = 0, j = 0, k = 0, l = 0;
+	char *str;
 
 	if (s1 == NULL)
-	s1 = "";
-
+		s1 = "";
 	if (s2 == NULL)
-	s2 = "";
+		s2 = "";
 
-	while (s1[slen1])
-	slen1++;
+	while (s1[i])
+		i++;
 
-	while (s2[slen2])
-	slen2++;
+	while (s2[k])
+		k++;
 
-	if (n >= slen2)
-	a = slen1 + slen2;
+	if (n >= k)
+		l = i + k;
 	else
-	a = slen1 + n;
+		l = i + n;
 
-	s = malloc(sizeof(char) * a + 1);
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
+		return (NULL);
 
-	if (s == NULL)
-	return (NULL);
-
-	slen2 = 0;
-
-	while (b < a)
+	k = 0;
+	while (j < l)
 	{
-		if (b <= slen1)
-		s[b] = s1[b];
+		if (j <= i)
+			str[j] = s1[j];
 
-	if (b >= slen1)
-	{
-		s[b] = s2[slen2];
-		slen2++;
+		if (j >= i)
+		{
+			str[j] = s2[k];
+			k++;
+		}
+		j++;
 	}
-	b++;
-	}
-	s[b] = '\0';
-	return (s);
+	str[j] = '\0';
+	return (str);
 }
