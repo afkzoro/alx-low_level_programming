@@ -4,12 +4,11 @@
 #include <stddef.h>
 
 /**
-	* string_nconcat -
-	*
-	* @s1:
-	* @s2:
-	* @n
-	* @return char*
+	* string_nconcat - Concatenates two strings
+	* @s1: First string
+	* @s2: Second String
+	* @n: ....
+	* Return: Returns pointer to new string
 	*/
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
