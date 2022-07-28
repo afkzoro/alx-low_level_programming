@@ -19,9 +19,10 @@ int *array_range(int min, int max)
 
 	if (arr == NULL)
 	return (NULL);
-	for (;min <= max; b++)
+	for (; min <= max;)
 	{
 		min++;
+		b++;
 	}
 
 	return (arr);
