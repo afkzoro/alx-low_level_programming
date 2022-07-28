@@ -7,7 +7,7 @@
 	* string_nconcat - Concatenates two strings
 	* @s1: First string
 	* @s2: Second String
-	* @n: ....
+	* @n: Size of memory
 	* Return: Returns pointer to new string
 	*/
 
