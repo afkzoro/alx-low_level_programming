@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-	* array_range - Creates array containing values from mininum to maximux both included
+	* array_range - Creates array containing values from min to max
 	* @min: Minimum value
 	* @max: Maximum value
 	*
@@ -19,6 +19,7 @@ int *array_range(int min, int max)
 
 	if (arr == NULL)
 	return (NULL);
+
 	for (; min <= max;)
 	{
 		arr[b] = min;
