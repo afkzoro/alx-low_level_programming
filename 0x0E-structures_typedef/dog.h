@@ -2,7 +2,7 @@
 #define _HEADER_
 
 /**
- * struct dog -
+ * struct dog - Dog's personal data
  * @name: The dog's name
 	* @age: The dog's age
 	* @owner: The dog's owner
@@ -16,7 +16,7 @@ struct dog
 };
 
 /**
- * dog_t -> Typedef for dog struct
+ * dog_t - Typedef for dog struct
  */
 typedef struct dog dog_t;
 
