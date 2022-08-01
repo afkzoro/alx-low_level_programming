@@ -6,7 +6,7 @@
 	* main - Prints name of file
 	* Return: Always 0(success)
 	*/
-int main()
+int main(void)
 {
 	printf("%s\n", NAME);
 	return (0);
