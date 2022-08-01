@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints name of file
-	*
- * Return: Always 0(success)
- */
+	* main - Prints name of file
+	* Return: Always 0(success)
+	*/
 int main()
 {
 	printf("%s\n", __FILE__);
