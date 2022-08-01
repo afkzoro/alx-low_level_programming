@@ -1,55 +1,71 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
-	* new_dog - Creates a new struct of type dog
-	*
-	* @name: Struct name
-	* @age: Struct age
-	* @owner: Struct owner
-	* Return: Returns pointer to new dog
-	*/
+ * _strdup - returns a pointer to space in memory containing copy of string.
+ * @s: pointer to the string.
+ * Return: Pointer to a string stored in memory.
+ */
+char *_strdup(char *s)
+{
+	char *dup;
+	unsigned int i = 0;
+	unsigned int j = 0;
+
+	if (s == NULL)
+		return (NULL);
+/*Get the length of the string.*/
+	while (s[i] != '\0')
+		i += 1;
+/*+1 to include the terminating character in size.*/
+	i++;
+
+	dup = malloc(i * sizeof(*dup));
+	if (dup == NULL)
+		return (NULL);
+	while (j < i)
+	{
+		dup[j] = s[j];
+		j++;
+	}
+	return (dup);
+}
+
+
+
+
+/**
+ *new_dog - create an instance of struct dog.
+ *@name:first argument.
+ *@age:second argument.
+ *@owner: Third argument.
+ *Return: instance of struct.
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i, len1, len2;
-	dog_t *cute_dog;
+	dog_t *newdog;
 
-	len1 = len2 = 0;
+	newdog = malloc(sizeof(struct dog));
 
-	while (name[len1++])
-	;
-	while (owner[len2++])
-	;
-
-	cute_dog = malloc(sizeof(dog_t));
-	if (cute_dog == NULL)
-	return (NULL);
-
-	cute_dog->name = malloc(sizeof(cute_dog->name) * len1);
-	if (cute_dog == NULL)
-	return (NULL);
-
-	i = 0;
-
-	while (i < len1)
+	if (newdog == NULL)
+		return (NULL);
+/*Assign name element of new struct to the copy of name.*/
+	newdog->name = _strdup(name);
+	if (newdog->name == NULL)
 	{
-		cute_dog->name[i] = name[i];
-		i++;
+		free(newdog);
+		return (NULL);
 	}
-	cute_dog->age = age;
-
-	cute_dog->owner = malloc(sizeof(cute_dog->owner) * len2);
-	if (cute_dog == NULL)
-	return (NULL);
-
-	i = 0;
-
-	while (i < len2)
+/*Assgin owner element of new struct to the copy of owner.*/
+	newdog->owner = _strdup(owner);
+	if (newdog->owner == NULL)
 	{
-		cute_dog->owner[i] = owner[i];
-		i++;
+		free(newdog->name);
+		free(newdog);
+		return (NULL);
 	}
+	newdog->age = age;
 
-	return (cute_dog);
+	return (newdog);
 }
