@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
-  * get_op_func - Decides the right operator function
-  * @s: ...
-  *
-  * Return: ...
-  */
+		* get_op_func - Decides the right operator function
+		* @s: The operator passed as an argument
+		*
+		* Return: Always 0(Success)
+		*/
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -20,12 +20,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 5)
+	for (; i < 5; i++)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
 
-		i++;
 	}
 
 	return (0);
