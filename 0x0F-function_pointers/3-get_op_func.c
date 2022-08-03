@@ -18,9 +18,9 @@ int (*get_op_func(char *s))(int, int)
 	{ "%", op_mod },
 	{ NULL, NULL }
 	};
-	int i = 0;
+	int i;
 
-	for (; i < 5; i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
