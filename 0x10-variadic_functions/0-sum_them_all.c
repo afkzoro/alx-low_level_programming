@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int sum;
 	int i;
 
-	i = 0;
+	sum = i = 0;
 
 	if (n != 0)
 	{
