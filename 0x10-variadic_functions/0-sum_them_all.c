@@ -5,7 +5,7 @@
 /**
 	* sum_them_all - Sums all arguments passed to the function
 	*
-	* n: Number of arguments passed
+	* @n: Number of arguments passed
 	* ... - Varible list of arguments
 	* Return: Sum of arguments
 	*/
@@ -18,7 +18,7 @@ int sum_them_all(int n, ...)
 
 	va_list args;
 
-	va_start(args,n);
+	va_start(args, n);
 
 	for (; i < n; i++)
 	{
