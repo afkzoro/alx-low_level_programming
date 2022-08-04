@@ -5,7 +5,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
-
+/**
+ * struct listTypes - Lists all types
+ *
+ */
 typedef struct listTypes
 {
 	char *check;
