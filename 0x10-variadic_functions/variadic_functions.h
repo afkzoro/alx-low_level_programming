@@ -7,7 +7,8 @@
 #include <stddef.h>
 /**
  * struct listTypes - Lists all types
- *
+ * @check: Identifies type
+	* @f: Function
  */
 typedef struct listTypes
 {
