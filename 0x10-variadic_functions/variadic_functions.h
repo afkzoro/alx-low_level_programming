@@ -1,5 +1,5 @@
-#ifndef VARIADIC_FNS
-#define VARIADIC_FNS
+#ifndef _VARIADIC_FUNCTIONS_H_
+#define _VARIADIC_FUNCTIONS_H_
 #define FORMAT(f) ("%"#f)
 #include <stdarg.h>
 #include <stdlib.h>
