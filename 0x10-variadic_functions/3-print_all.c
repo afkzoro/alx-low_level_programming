@@ -14,7 +14,7 @@ void print_char(va_list c)
 }
 
 /**
-	* print_integer - Prints integer
+	* print_int - Prints integer
 	*
 	* @i: ...
 	*/
