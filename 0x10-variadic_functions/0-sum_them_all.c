@@ -2,7 +2,6 @@
 
 /**
 	* sum_them_all - Sums all arguments passed to the function
-	*
 	* @n: Number of arguments passed
 	* Return: Sum of arguments if condition is true
 	*/
