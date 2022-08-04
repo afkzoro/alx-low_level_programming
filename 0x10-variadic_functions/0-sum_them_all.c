@@ -10,7 +10,7 @@
 	* Return: Sum of arguments
 	*/
 
-int sum_them_all(int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	int i, sum;
 

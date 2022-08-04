@@ -1,6 +1,9 @@
 #ifndef VARIADIC_FNS
 #define VARIADIC_FNS
 #define FORMAT(f) ("%"#f)
+#include <stdarg.h>
+#include <stdlib.h>
+
 typedef struct listTypes
 {
 	char *check;
