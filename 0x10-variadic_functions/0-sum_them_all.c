@@ -7,8 +7,7 @@
 	* sum_them_all - Sums all arguments passed to the function
 	*
 	* @n: Number of arguments passed
-	* ... - Varible list of arguments
-	* Return: Sum of arguments
+	* Return: Sum of arguments if condition is true
 	*/
 
 int sum_them_all(const unsigned int n, ...)
