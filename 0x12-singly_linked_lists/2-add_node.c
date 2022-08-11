@@ -4,40 +4,40 @@
 #include "lists.h"
 
 /**
- * add_node - Adds anode to the = beginning of a linked list
- *
- * @head: The pointer to the head of the linked list
- * @str: the string to add to the linked list
- * Return: returns address of new list or NULL if head = NULL
- */
+	* add_node - Adds anode to the = beginning of a linked list
+	*
+	* @head: The pointer to the head of the linked list
+	* @str: the string to add to the linked list
+	* Return: returns address of new list or NULL if head = NULL
+	*/
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *aux;
 
 	if (head != NULL && str != NULL)
- {
-  aux = (size_t)malloc(sizeof(size_t));
-  if (aux == NULL)
-  return (NULL);
+	{
+		aux = (size_t)malloc(sizeof(size_t));
+		if (aux == NULL)
+		return (NULL);
 
-  (*aux).str = strdup(str);
-  (*aux).len = _strlen(str);
-  (*aux).next = *head;
+		(*aux).str = strdup(str);
+		(*aux).len = _strlen(str);
+		(*aux).next = *head;
 
 		*head = aux;
 
 		return (aux);
- }
+	}
 
 	return (0);
 }
 
 /**
- * _strlen - Gives the length of a string
- * @s: The string considered
- *
- * Return: String length
- */
+	* _strlen - Gives the length of a string
+	* @s: The string considered
+	*
+	* Return: String length
+	*/
 int _strlen(const char *s)
 {
 	int a = 0;
