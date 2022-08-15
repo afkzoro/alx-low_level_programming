@@ -1,9 +1,9 @@
-# Low level programming :open_book:
+# Low level programming
 
-## Description :label:
+## Description
 > This is my first low level programming repository in the ALX SE program. It contains solutions to the tasks i encountered in the program. It covers the C-programming language.
 
-## Contents :receipt:
+## Contents
 
 
 * [0x00-hello_world](0x00-hello_world)
@@ -17,14 +17,17 @@
 * [0x08-recursion](0x08-recursion)
 * [0x09-static_libraries](0x09-static_libraries)
 * [0x10-variadic_functions](0x10-variadic_functions)
-* [0x12-singly_linked_lists](0x12-singly_linked_lists)
 * [0x0A-argc_argv](0x0A-argc_argv)
 * [0x0B-malloc_free](0x0B-malloc_free)
 * [0x0C-more_malloc_free](0x0C-more_malloc_free)
 * [0x0D-preprocessor](0x0D-preprocessor)
 * [0x0E-structures_typedef](0x0E-structures_typedef)
+<<<<<<< HEAD
 * [0x0F-function_pointers](0x0F-function_pointers)
 
 ## Contact Me :placard:
 
 Author: Samuel Theophilus
+=======
+* [0x0F-function_pointers](0x0F-function_pointers)
+>>>>>>> parent of 1a69559 (commit)
