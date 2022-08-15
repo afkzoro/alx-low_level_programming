@@ -10,17 +10,15 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
- listint_t *current = head;
- int tally = 0;
+	unsigned tally;
 
- while (current != NULL)
- {
-	if (tally = index)
-	return (current->n);
+	for (tally = 0; head != NULL; tally++)
+	{
+		if (tally == index)
+		return (head);
 
-	tally++;
-	current = current->next;
- }
+		head = (*head).next;
+	}
 
- assert (0);
+	return (NULL);
 }
