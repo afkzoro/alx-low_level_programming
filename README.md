@@ -22,12 +22,8 @@
 * [0x0C-more_malloc_free](0x0C-more_malloc_free)
 * [0x0D-preprocessor](0x0D-preprocessor)
 * [0x0E-structures_typedef](0x0E-structures_typedef)
-<<<<<<< HEAD
 * [0x0F-function_pointers](0x0F-function_pointers)
 
 ## Contact Me :placard:
 
 Author: Samuel Theophilus
-=======
-* [0x0F-function_pointers](0x0F-function_pointers)
->>>>>>> parent of 1a69559 (commit)
