@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
-	* loop_list_len - Finds loop by using two pointers
+	* loop_listint_len - Finds loop by using two pointers
 	* if these pointers meet there's a loop in the linked list
 	*
 	* @head: Pointer to head of linked list
 	* Return: Always 0 (Success)
 	*/
-size_t loop_list_len(const listint_t *head)
+size_t loop_listint_len(const listint_t *head)
 {
 	/* Floyd’s Cycle-Finding Algorithm */
 	const listint_t *slow_p, *fast_p;
@@ -61,7 +61,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *tmp;
 	size_t nodes, index;
 
-	nodes = loop_list_len(*h);
+	nodes = loop_listint_len(*h);
 
 	if (nodes == 0)
 	{
