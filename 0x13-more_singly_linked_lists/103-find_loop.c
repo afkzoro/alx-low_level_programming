@@ -10,8 +10,8 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
- /* Floyd’s Cycle-Finding Algorithm */
- listint_t *slow_p, *fast_p;
+	/* Floyd’s Cycle-Finding Algorithm */
+	listint_t *slow_p, *fast_p;
 
 	if (head == NULL || head->next == NULL)
 		return (NULL);
