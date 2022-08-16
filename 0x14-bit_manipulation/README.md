@@ -1,0 +1,1 @@
+will fix betty in the future my first solutions to the bit manipulation task
