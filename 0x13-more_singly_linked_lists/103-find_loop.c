@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-	* loop_listint_len - Finds loop by using two pointers
+	* find_listint_loop - Finds loop by using two pointers
 	* if these pointers meet there's a loop in the linked list
 	*
 	* @head: Pointer to head of linked list
