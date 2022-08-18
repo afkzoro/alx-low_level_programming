@@ -3,7 +3,7 @@
 
 /**
 	* _putchar - writes character c to stdout
-	*
+	* @c: character
 	* Return: on success 1
 	*
 	*/
@@ -21,7 +21,7 @@ int _putchar(char c)
 
 void recursiveDiv(unsigned long int n)
 {
-	if(n < 1)
+	if (n < 1)
 	return;
 
 	recursiveDiv(n / 2);
@@ -40,7 +40,7 @@ void recursiveDiv(unsigned long int n)
 	*/
 void print_binary(unsigned long int n)
 {
-	if(n == 0)
+	if (n == 0)
 	{
 	_putchar('0');
 	return;
