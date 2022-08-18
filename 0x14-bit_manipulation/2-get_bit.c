@@ -2,7 +2,7 @@
 
 /**
  * get_bit - returns the value of a bit at a  given index
- * 
+ *
  * @n: The integer considered
  * @index: The position of the bit starting from 0
  * Return: The bit value or -1 if error occurs
