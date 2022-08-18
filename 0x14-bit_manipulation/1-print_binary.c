@@ -13,7 +13,7 @@ void recursiveDiv(unsigned long int n)
 	if (n < 1)
 	return;
 
-	recursiveDiv(n >> 2);
+	recursiveDiv(n >> 1);
 
 	if (n & 1)
 	_putchar('1');
