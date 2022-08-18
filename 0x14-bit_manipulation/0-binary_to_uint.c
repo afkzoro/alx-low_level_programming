@@ -19,10 +19,10 @@ unsigned int binary_to_uint(const char *b)
 
 	while (c = len--)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[len] != 48 && b[len] != 49)
 		return (0);
 
-		if (b[len] == '1')
+		if (b[len] == 49)
 		i += 1 << base;
 
 		base++;
