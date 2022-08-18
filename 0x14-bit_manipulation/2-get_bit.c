@@ -1,10 +1,17 @@
 #include "main.h"
 
+/**
+ * get_bit - returns the value of a bit at a  given index
+ * 
+ * @n: The integer considered
+ * @index: The position of the bit starting from 0
+ * Return: The bit value or -1 if error occurs
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
  unsigned int count = 0;
 
- while(n)
+ while (n != 0)
  {
   if (count == index)
   {

@@ -1,10 +1,12 @@
-#ifndef _BIT_MANIPULATION
-#define _BIT_MANIPULATION
+#ifndef _BIT_MANIPULATION_
+#define _BIT_MANIPULATION_
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
 
+int _putchar(char c);
+int _strlen(const char *s);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 void recursiveDiv(unsigned long int n);
