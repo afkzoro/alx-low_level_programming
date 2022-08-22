@@ -22,5 +22,22 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(file_d);
 	return (1);
+}
 
+/**
+ * _strlen - Gives the length of a string
+ * @s: The string considered
+ *
+ * Return: String length
+ */
+int _strlen(char *s)
+{
+	int a = 0;
+
+	for (; *s != '\0'; s++)
+	{
+		a++;
+	}
+
+	return (a);
 }
