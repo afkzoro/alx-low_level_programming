@@ -10,7 +10,6 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file_d;
-	ssize_t byte;
 
 	if (filename == NULL)
 	return (-1);
@@ -19,11 +18,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (file_d == -1)
 	return (-1);
 
-	byte = write(file_d, text_content, _strlen(text_content));
-
 	if (text_content != NULL)
 	{
-		if (byte == -1)
+		if (write(file_d, text_content, _strlen(text_content)) == -1);
 		return (-1);
 	}
 
