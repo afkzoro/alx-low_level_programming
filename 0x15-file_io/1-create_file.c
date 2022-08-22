@@ -42,9 +42,3 @@ int _strlen(char *s)
 
 	return (a);
 }
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
