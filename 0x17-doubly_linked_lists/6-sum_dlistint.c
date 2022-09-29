@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * @ 
- * 
- * @param head 
- * @return int 
+ * sum_dlistint - . . ... .
+ *
+ * @head: ......
+ * Return: .....
  */
 int sum_dlistint(dlistint_t *head)
 {
