@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * @ 
+ * 
+ * @param head 
+ * @return int 
+ */
 int sum_dlistint(dlistint_t *head)
 {
 	dlistint_t *current_node = head;
