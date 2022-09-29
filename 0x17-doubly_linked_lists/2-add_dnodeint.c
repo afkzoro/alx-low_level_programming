@@ -2,9 +2,9 @@
 
 /**
  * add_dnodeint - Adds a node to a double linked list
- * 
- * @head: Pointer to head of double linked list 
- * @n: The integer to set in the new node 
+ *
+ * @head: Pointer to head of double linked list
+ * @n: The integer to set in the new node
  * Return: The head pointer of the double linked list
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
